@@ -1,2 +1,2 @@
-yarn add ketcher-react
+yarn install
 yarn start

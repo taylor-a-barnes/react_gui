@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { RemoteStructServiceProvider } from 'ketcher-core'
+import { ButtonsConfig, Editor } from 'ketcher-react'
 
 function App() {
   return (
@@ -23,16 +24,10 @@ const structServiceProvider = new RemoteStructServiceProvider(
 
 const MyComponent = () => {
   return (
-    /*<Editor
+    <Editor
       staticResourcesUrl={process.env.PUBLIC_URL}
       structServiceProvider={structServiceProvider}
-    />*/
-    <div className="App">
-      <h1>New Test</h1>
-      <Button variant="contained" color="primary">
-        Click me
-      </Button>
-    </div>
+    />
   )
 }
 
